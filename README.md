@@ -15,11 +15,11 @@
 ## Ekran Görüntüleri 📸
 
 <div style="display: flex; flex-direction: row; justify-content: space-around;">
-    <img src="./screenshots/home_screen.png" alt="Ana Sayfa" width="300"/>
-    <img src="./screenshots/home_screen_2.png" alt="Ana Sayfa 2" width="300"/>
-    <img src="./screenshots/detail_screen.png" alt="Film Detayı" width="300"/>
-    <img src="./screenshots/favorites_screen.png" alt="Favoriler" width="300"/>
-    <img src="./screenshots/search_screen.png" alt="Arama Sayfa" width="300"/>
+    <img src="./screenshots/home_screen.png" alt="Ana Sayfa" width="200"/>
+    <img src="./screenshots/home_screen_2.png" alt="Ana Sayfa 2" width="200"/>
+    <img src="./screenshots/detail_screen.png" alt="Film Detayı" width="200"/>
+    <img src="./screenshots/favorites_screen.png" alt="Favoriler" width="200"/>
+    <img src="./screenshots/search_screen.png" alt="Arama Sayfa" width="200"/>
 </div>
 
 ## Kurulum ve Kullanım 🛠️
