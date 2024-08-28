@@ -1,66 +1,66 @@
 # MovieApp 🎬
 
-**MovieApp**, Android platformunda Kotlin dili kullanılarak geliştirilmiş bir mobil uygulamadır. Bu uygulama, kullanıcılara popüler, en çok oy alan, vizyondaki ve yakında çıkacak filmler hakkında bilgi sunar. Kullanıcılar film arayabilir, film detaylarını görüntüleyebilir ve favori listelerine ekleyebilirler.
+**MovieApp** is a mobile application developed for the Android platform using the Kotlin programming language. This application provides users with information about popular, top-rated, currently showing, and upcoming movies. Users can search for movies, view movie details, and add movies to their favorites list.
 
-## Özellikler 📱
+## Features 📱
 
-- **Film Arama**: Kullanıcılar anahtar kelimelerle film arayabilir.
-- **Popüler Filmler**: Güncel popüler filmleri listeler.
-- **En Çok Oy Alan Filmler**: En yüksek oylamaya sahip filmleri gösterir.
-- **Vizyondaki Filmler**: Halen vizyonda olan filmleri listeler.
-- **Yakında Çıkacak Filmler**: Yakında çıkacak olan filmleri gösterir.
-- **Film Detayları**: Her film için ayrıntılı bilgi ve fragman izleme seçeneği sunar.
-- **Favorilere Ekleme**: Kullanıcılar favori filmlerini kaydedebilir.
+- **Movie Search**: Users can search for movies using keywords.
+- **Popular Movies**: Lists currently popular movies.
+- **Top Rated Movies**: Shows movies with the highest ratings.
+- **Now Playing Movies**: Lists movies that are currently in theaters.
+- **Upcoming Movies**: Displays movies that are about to be released.
+- **Movie Details**: Provides detailed information and an option to watch trailers for each movie.
+- **Add to Favorites**: Users can save their favorite movies.
 
-## Ekran Görüntüleri 📸
+## Screenshots 📸
 
 <div style="display: flex; flex-direction: row; justify-content: space-around;">
-    <img src="./screenshots/home_screen.png" alt="Ana Sayfa" width="200"/>
-    <img src="./screenshots/home_screen_2.png" alt="Ana Sayfa 2" width="200"/>
-    <img src="./screenshots/detail_screen.png" alt="Film Detayı" width="200"/>
-    <img src="./screenshots/favorites_screen.png" alt="Favoriler" width="200"/>
-    <img src="./screenshots/search_screen.png" alt="Arama Sayfa" width="200"/>
+    <img src="./screenshots/home_screen.png" alt="Home Screen" width="200"/>
+    <img src="./screenshots/home_screen_2.png" alt="Home Screen 2" width="200"/>
+    <img src="./screenshots/detail_screen.png" alt="Detail Screen" width="200"/>
+    <img src="./screenshots/favorites_screen.png" alt="Favorites Screen" width="200"/>
+    <img src="./screenshots/search_screen.png" alt="Search Screen" width="200"/>
 </div>
 
-## Kurulum ve Kullanım 🛠️
+## Installation and Usage 🛠️
 
-### Gereksinimler
+### Requirements
 
-- Android Studio Arctic Fox veya daha yeni bir sürüm
-- Minimum API seviyesi: 24 (Android 7.0 Nougat)
+- Android Studio Arctic Fox or newer
+- Minimum API level: 24 (Android 7.0 Nougat)
 
-### Kurulum
+### Installation
 
-1. Bu depoyu klonlayın:
+1. Clone this repository:
     ```bash
     git clone https://github.com/berkkanrencber/MovieApp.git
     ```
-2. Android Studio'yu açın ve proje klasörünü içe aktarın.
-3. Gerekli bağımlılıkların yüklü olduğundan emin olmak için projeyi senkronize edin.
-4. Bir Android cihaz veya emülatör bağlayın ve uygulamayı çalıştırın.
+2. Open Android Studio and import the project folder.
+3. Sync the project to ensure all dependencies are installed.
+4. Connect an Android device or emulator and run the application.
 
-## Kullanılan Teknolojiler ve Kütüphaneler 🛠️
+## Technologies and Libraries Used 🛠️
 
-- **Kotlin**: Uygulamanın yazılım dili.
-- **XML ve ViewBinding**: UI tasarımı ve yönetimi için XML tabanlı layout'lar ve ViewBinding kullanımı.
-- **MVVM Mimarisi**: Uygulama mimarisi olarak Model-View-ViewModel yapısı.
-- **Coroutines**: Asenkron işlemler ve arka plan görevleri için Kotlin Coroutines.
-- **Dagger-Hilt**: Dependency Injection (Bağımlılık Enjeksiyonu) için.
-- **Retrofit**: REST API çağrıları için.
-- **Room**: Yerel veritabanı yönetimi için.
-- **Coil**: Görüntü yüklemek için.
-- **Navigation Component**: Uygulama içi gezinme için.
+- **Kotlin**: Programming language for the application.
+- **XML and ViewBinding**: XML-based layouts and ViewBinding for UI design and management.
+- **MVVM Architecture**: Model-View-ViewModel structure as the application architecture.
+- **Coroutines**: Kotlin Coroutines for asynchronous tasks and background operations.
+- **Dagger-Hilt**: For Dependency Injection.
+- **Retrofit**: For REST API calls.
+- **Room**: For local database management.
+- **Coil**: For image loading.
+- **Navigation Component**: For in-app navigation.
 
-## API Anahtarı Ekleme 🔑
+## Adding the API Key 🔑
 
-Uygulamanın çalışabilmesi için bir film API anahtarına ihtiyacınız var. Lütfen şu adımları izleyin:
+To run the application, you need a movie API key. Please follow these steps:
 
-1. [The Movie Database (TMDb)](https://www.themoviedb.org/) web sitesinden bir API anahtarı alın.
-2. `local.properties` dosyasına `API_KEY=YOUR_API_KEY` şeklinde ekleyin.
+1. Obtain an API key from [The Movie Database (TMDb)](https://www.themoviedb.org/).
+2. Add `API_KEY=YOUR_API_KEY` to the `local.properties` file.
 
-## İletişim 📧
+## Contact 📧
 
-- **Geliştirici**: [berkkanrencber](https://github.com/berkkanrencber)
-- **E-posta**: berkkanrencber@gmail.com
+- **Developer**: [berkkanrencber](https://github.com/berkkanrencber)
+- **Email**: berkkanrencber@gmail.com
 
-Her türlü geri bildiriminizi ve önerinizi duymaktan memnuniyet duyarım! 🎉
+I would be glad to hear your feedback and suggestions! 🎉
