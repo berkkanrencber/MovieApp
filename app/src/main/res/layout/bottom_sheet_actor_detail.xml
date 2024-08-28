@@ -1,0 +1,199 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+            android:id="@+id/drag_handle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_actor_image"
+            android:layout_width="@dimen/actor_detail_image_width"
+            android:layout_height="@dimen/actor_detail_image_height"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/drag_handle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:strokeColor="@color/gray"
+            android:padding="8dp"
+            app:strokeWidth="@dimen/stroke_width"
+            app:shapeAppearanceOverlay="@style/RoundedCornersImageView"
+            android:contentDescription="@string/actor_image"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/iv_actor_image"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_actor_image"
+            app:layout_constraintStart_toStartOf="@+id/iv_actor_image"
+            app:layout_constraintEnd_toEndOf="@+id/iv_actor_image"/>
+
+        <TextView
+            android:id="@+id/tv_actor_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/actor_name_text_size"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/iv_actor_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="@color/gray"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_actor_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/ll_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/actor_detail_info_image_width"
+                android:layout_height="@dimen/actor_detail_info_image_height"
+                android:src="@drawable/ic_birthday"
+                android:contentDescription="@string/birthday_icon" />
+
+            <TextView
+                android:id="@+id/tv_actor_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/actor_detail_info_text_size"
+                android:text="-"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_place_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintTop_toBottomOf="@id/ll_birthday"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/actor_detail_info_image_width"
+                android:layout_height="@dimen/actor_detail_info_image_height"
+                android:src="@drawable/ic_home"
+                android:contentDescription="@string/place_of_birth_icon" />
+
+            <TextView
+                android:id="@+id/tv_actor_place_of_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/actor_detail_info_text_size"
+                android:text="-"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_deathday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintTop_toBottomOf="@id/ll_place_of_birth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/actor_detail_info_image_width"
+                android:layout_height="@dimen/actor_detail_info_image_height"
+                android:src="@drawable/ic_deathday"
+                android:contentDescription="@string/deathday_icon" />
+
+            <TextView
+                android:id="@+id/tv_actor_deathday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/actor_detail_info_text_size"
+                android:text="-"/>
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/divider_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="@color/gray"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintTop_toBottomOf="@id/ll_deathday"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_actor_movies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="1"
+            app:layout_constraintTop_toBottomOf="@id/divider_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/item_actor_movie"/>
+
+        <TextView
+            android:id="@+id/tv_actor_biography"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/actor_biography_text_size"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@id/rv_actor_movies"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

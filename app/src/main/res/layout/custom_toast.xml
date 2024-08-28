@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/background_custom_toast"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/iv_toast_icon"
+        android:layout_width="@dimen/toast_image_width"
+        android:layout_height="@dimen/toast_image_height"
+        android:src="@drawable/ic_love"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/toast_text_size"
+        android:text="@string/added_favorites"
+        android:textColor="@color/white"/>
+</LinearLayout>

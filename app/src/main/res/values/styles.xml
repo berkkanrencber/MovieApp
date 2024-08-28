@@ -1,0 +1,36 @@
+<resources>
+    <style name="RoundedCornersImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="RoundedCornersImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <style name="BottomNavigationActive" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/bottom_navigation_text_size_active</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BottomNavigationInactive" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/bottom_navigation_text_size_inactive</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="BottomNavigationActiveLandscape" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/bottom_navigation_text_size_active_landscape</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BottomNavigationInactiveLandscape" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/bottom_navigation_text_size_inactive_landscape</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="closeIcon">@drawable/ic_close</item>
+        <item name="queryHint">@color/white</item>
+    </style>
+
+</resources>

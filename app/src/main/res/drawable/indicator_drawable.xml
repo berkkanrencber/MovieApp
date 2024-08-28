@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF"/> <!-- Seçili olan noktanın rengi -->
+            <size android:width="8dp" android:height="8dp"/> <!-- Seçili olan noktanın boyutu -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#888888"/> <!-- Seçili olmayan noktaların rengi -->
+            <size android:width="8dp" android:height="8dp"/> <!-- Seçili olmayan noktaların boyutu -->
+        </shape>
+    </item>
+</selector>

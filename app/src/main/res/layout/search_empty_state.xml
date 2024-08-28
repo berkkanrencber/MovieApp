@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="@dimen/search_empty_state_image_size"
+        android:layout_height="@dimen/search_empty_state_image_size"
+        android:src="@drawable/ic_search_blur" />
+
+    <TextView
+        android:id="@+id/tv_empty_state_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_searched_movie_yet"
+        android:textSize="@dimen/search_empty_state_header_text_size"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tv_empty_state_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_results_found"
+        android:textSize="@dimen/search_empty_state_message_text_size"
+        android:textAlignment="center"
+        android:textColor="@color/soft_gray"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+</LinearLayout>
+
+
