@@ -23,13 +23,13 @@
 ### Gereksinimler
 
 - Android Studio Arctic Fox veya daha yeni bir sürüm
-- Minimum API seviyyesi: 21 (Android 5.0 Lollipop)
+- Minimum API seviyesi: 24 (Android 7.0 Nougat)
 
 ### Kurulum
 
 1. Bu depoyu klonlayın:
     ```bash
-    git clone https://github.com/kullaniciadi/MovieApp.git
+    git clone https://github.com/berkkanrencber/MovieApp.git
     ```
 2. Android Studio'yu açın ve proje klasörünü içe aktarın.
 3. Gerekli bağımlılıkların yüklü olduğundan emin olmak için projeyi senkronize edin.
@@ -38,7 +38,9 @@
 ## Kullanılan Teknolojiler ve Kütüphaneler 🛠️
 
 - **Kotlin**: Uygulamanın yazılım dili.
-- **Jetpack Compose**: UI tasarımı ve yönetimi için modern bir toolkit.
+- **XML ve ViewBinding**: UI tasarımı ve yönetimi için XML tabanlı layout'lar ve ViewBinding kullanımı.
+- **MVVM Mimarisi**: Uygulama mimarisi olarak Model-View-ViewModel yapısı.
+- **Coroutines**: Asenkron işlemler ve arka plan görevleri için Kotlin Coroutines.
 - **Dagger-Hilt**: Dependency Injection (Bağımlılık Enjeksiyonu) için.
 - **Retrofit**: REST API çağrıları için.
 - **Room**: Yerel veritabanı yönetimi için.
@@ -52,21 +54,9 @@ Uygulamanın çalışabilmesi için bir film API anahtarına ihtiyacınız var. 
 1. [The Movie Database (TMDb)](https://www.themoviedb.org/) web sitesinden bir API anahtarı alın.
 2. `local.properties` dosyasına `API_KEY=YOUR_API_KEY` şeklinde ekleyin.
 
-## Katkıda Bulunma 🤝
-
-1. Bu depoyu fork edin.
-2. Yeni bir özellik eklemek veya hata düzeltmek için bir dal oluşturun (`git checkout -b feature-adi`).
-3. Değişikliklerinizi yapın ve commit edin (`git commit -m 'Açıklama'`).
-4. Dalınızı bu depoya push edin (`git push origin feature-adi`).
-5. Bir Pull Request gönderin.
-
-## Lisans 📜
-
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
-
 ## İletişim 📧
 
-- **Geliştirici**: [Adınız](https://github.com/kullaniciadi)
-- **E-posta**: email@example.com
+- **Geliştirici**: [berkkanrencber](https://github.com/berkkanrencber)
+- **E-posta**: berkkanrencber@gmail.com
 
-Her türlü geri bildiriminizi ve önerinizi duymaktan memnuniyet duyarız! 🎉
+Her türlü geri bildiriminizi ve önerinizi duymaktan memnuniyet duyarım! 🎉
